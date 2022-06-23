@@ -10,6 +10,10 @@
     $fontPrimary: Roboto, sans-serif;
     $fontLogo: Raleway, sans-serif;
 
+    $mobile: 480px;
+    $tablet: 768px;
+    $descstop: 1200px;
+
     %section { padding-top: 94px; padding-bottom: 94px; }
     %img {display: block; max-width: 100%;}
 

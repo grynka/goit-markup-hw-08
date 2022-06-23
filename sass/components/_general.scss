@@ -6,18 +6,41 @@ body {
 }
 
 h1 {
-    font-size: 44px;
     font-weight: 900;
-    font-family: "Roboto", sans-serif;
+    font-family: $fontPrimary;
     line-height: 1.3637;
     letter-spacing: 0.06em;
+    @media screen and (min-width: $mobile) {
+            font-size: 26px;
+        }
+    
+        @media screen and (min-width: $tablet) {
+            width: $tablet;
+        }
+    
+        @media screen and (min-width: $descstop) {
+            font-size: 44px;
+        }
 }
 
 .container {
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+
+@media screen and (min-width: $mobile) {
+    width: $mobile;  
+}
+
+@media screen and (min-width: $tablet) {
+    width: $tablet;
+}
+
+@media screen and (min-width: $descstop) {
+    width: $descstop;
+}
+
+
 }
 
 .section {
