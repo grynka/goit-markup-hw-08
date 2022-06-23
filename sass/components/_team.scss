@@ -43,13 +43,24 @@
 }
 
 .team__item {
-  flex-basis: calc(100% / 4 - $margin-li);
   margin-left: $margin-li;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
   background-color: var(--brand-color-white);
   text-align: center;
   border-radius: 4px;
+
+    @media screen and (min-width: $mobile) {
+        display: block;
+      }
+    
+      @media screen and (min-width: $tablet) {
+flex-basis: calc(100% / 2 - $margin-li);
+      }
+    
+      @media screen and (min-width: $descstop) {
+flex-basis: calc(100% / 4 - $margin-li);
+      }
 }
 
 .team__info {
