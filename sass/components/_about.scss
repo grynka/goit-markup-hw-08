@@ -1,0 +1,42 @@
+.about__title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  margin-top: 0;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.about__items {
+  list-style: none;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * $margin-li);
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.about__item {
+  flex-basis: calc(100% / 3 - $margin-li);
+  margin-left: $margin-li;
+  position: relative;
+}
+
+.about__lable {
+  color: $brand-color-white;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  text-align: center;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding: 27px;
+  line-height: 1.17em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}

@@ -1,0 +1,20 @@
+
+    $brand-color: #212121;
+    $brand-color-blue: #2196f3;
+    $brand-color-border: #ececec;
+    $brand-color-link: #757575;
+    $brand-color-white: #ffffff;
+    $brand-color-black: #000000;
+    $brand-color-background: #2f303a;
+    $margin-li: 30px;
+    $fontPrimary: Roboto, sans-serif;
+    $fontLogo: Raleway, sans-serif;
+
+    %section { padding-top: 94px; padding-bottom: 94px; }
+    %img {display: block; max-width: 100%;}
+
+@mixin flexCenter($type: flex, $main-axis: center, $cross-axis: center) {
+    display: $type;
+    justify-content: $main-axis;
+    align-items: $cross-axis;
+}

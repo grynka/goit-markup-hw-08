@@ -1,0 +1,119 @@
+.header {
+  display: flex;
+  height: 79px;
+  border-bottom: solid 1px $brand-color-border;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  color: $brand-color-black;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: $fontLogo;
+  text-decoration: none;
+  line-height: 1.1738;
+  margin-right: 93px;
+  letter-spacing: 0.02em;
+}
+
+.nav-logo:hover {
+  color: $brand-color-black;
+}
+
+.nav-logo__text {
+  color: $brand-color-blue;
+}
+
+.site-nav__link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.172;
+  letter-spacing: 0.02em;
+  height: 100%;
+  color: $brand-color;
+  font-weight: 500;
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
+  display: flex;
+
+  &:hover,
+  &:focus {
+    color: $brand-color-blue;
+    fill: $brand-color-blue;
+  }
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.site-nav__link--active {
+  position: relative;
+  color: $brand-color-blue;
+
+  &::after {
+    background-color: $brand-color-blue;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    content: "";
+    margin: auto;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+  }
+}
+
+.contacts {
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  align-items: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.contacts__link {
+  color: $brand-color-link;
+  fill: $brand-color-link;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.172;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    color: $brand-color-blue;
+    fill: $brand-color-blue;
+  }
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__icon {
+  margin-right: 10px;
+}

@@ -1,0 +1,50 @@
+.footer-left {
+    margin-right: 70px;
+    display: inline-block;
+}
+
+.footer-left__logo {
+    color: $brand-color-white;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: $fontLogo;
+    text-decoration: none;
+    margin-bottom: 20px;
+    line-height: 1.174;
+    display: block;
+    width: max-content;
+}
+
+.footer-left__text {
+    color: $brand-color-blue;
+}
+
+.footer-left__address {
+    display: inline-block;
+    color: $brand-color-white;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.714;
+}
+
+.footer-left__street {
+    margin: 0 0 9px 0;
+}
+
+.footer-left__links {
+    margin: 0 0 9px 0;
+}
+
+.footer-left__link {
+    margin: 0 0 9px 0;
+    color: $brand-color-white;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: color 250 cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        color: $brand-color-blue;
+    }
+}

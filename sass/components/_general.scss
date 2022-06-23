@@ -1,0 +1,33 @@
+body {
+    font-family: $fontPrimary;
+    margin: 0 auto;
+    color: $brand-color;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 44px;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.3637;
+    letter-spacing: 0.06em;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.section {
+    @extend %section;
+}
+
+img {
+@extend %img;
+}
+
+.last {
+    margin-bottom: 0;
+}
