@@ -9,16 +9,41 @@
   background-position-x: center;
   max-width: 1600px;
   background-size: cover;
-  padding: 200px 0;
   text-align: center;
   color: $brand-color-white;
   font-size: 44px;
   font-weight: 700;
   margin: 0 auto;
+
+  @media screen and (min-width: $mobile) {
+    padding: 118px 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 118px 0;
+  }
+
+  @media screen and (min-width: $descstop) {
+    padding: 200px 0;
+  }
 }
 
 .banner__text {
-  margin: 10px 0;
+  margin: 10px auto;
+  @media screen and (min-width: $mobile) {
+    font-size: 26px;
+    max-width: 360px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+    max-width: 360px;
+  }
+
+  @media screen and (min-width: $descstop) {
+    font-size: 44px;
+    max-width: 696px;
+  }
 }
 
 .banner__button {

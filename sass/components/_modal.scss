@@ -63,13 +63,13 @@
     transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 
     &:hover,
     &:focus {
             fill: $brand-color-blue;
             border: $brand-color-blue 1px solid;
-            cursor: pointer;
-        }
+    }
 }
 
 
@@ -220,7 +220,7 @@
     border: 0;
     background-color: $brand-color-blue;
     color: $brand-color-white;
-    padding: 10px 36px;
+    padding: 10px 56px;
     font-weight: 700;
     line-height: 1.875;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
@@ -229,6 +229,8 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 16px;
+    letter-spacing: 0.03em;
 
     &:hover
      {

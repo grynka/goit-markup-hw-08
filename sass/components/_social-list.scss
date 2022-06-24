@@ -1,4 +1,4 @@
-.social-list {
+.social__list {
     list-style: none;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -8,7 +8,7 @@
     padding: 0;
 }
 
-.social-link {
+.social__link {
     fill: #afb1b8;
     border-radius: 50%;
     width: 44px;
@@ -17,18 +17,18 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @include flexCenter;
+    
+    &:hover
+    &:focus {
+            fill: $brand-color-white;
+            background-color: $brand-color-blue;
+}
 }
 
-.social-item {
+.social__item {
     margin-right: 10px;
 }
 
 .social-item .last {
     margin-right: 0;
-}
-
-.social-link:hover,
-.social-link:focus {
-    fill: $brand-color-white;
-    background-color: $brand-color-blue;
 }

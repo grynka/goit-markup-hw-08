@@ -1,5 +1,5 @@
 .about {
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: calc($tablet - 1px)) {
       display: none;
     }
   

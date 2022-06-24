@@ -16,16 +16,27 @@
   flex-wrap: wrap;
   display: flex;
   margin-left: calc(-1 * $margin-li);
-  margin-bottom: 0;
   margin-top: 0;
+  @media screen and (min-width: $mobile) {
+    margin-bottom: calc(-1 * $margin-li);
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: calc(-1 * $margin-li);
+  }
+
+  @media screen and (min-width: $descstop) {
+    margin-bottom: 0;
+  }
 }
 
 .clients__item {
-    margin-left: $margin-li;
-@include flexCenter;
+  margin-left: $margin-li;
+  @include flexCenter;
 
-@media screen and (min-width: $mobile) {
+  @media screen and (min-width: $mobile) {
     flex-basis: calc(100% / 2 - $margin-li);
+    margin-bottom: $margin-li;
   }
 
   @media screen and (min-width: $tablet) {
@@ -35,17 +46,21 @@
   @media screen and (min-width: $descstop) {
     flex-basis: calc(100% / 6 - $margin-li);
   }
-
 }
 
 .clients__link {
   outline: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-  padding: 16px 32px;
   transition-property: fill, outline-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+
   &:hover,
   &:focus {
     fill: #2196f3;
