@@ -11,10 +11,7 @@
   padding: 0;
   margin-bottom: 0;
   margin-top: 0;
-
-  @media screen and (min-width: $mobile) {
-      display: block;
-    }
+  display: block;
   
     @media screen and (min-width: $tablet) {
       display: flex;
@@ -52,11 +49,8 @@
   line-height: 1.172;
   font-size: 14px;
   margin: 0;
+ text-align: center;
 
-    @media screen and (min-width: $mobile) {
-        text-align: center;
-      }
-    
       @media screen and (min-width: $tablet) {
         text-align: center;
       }

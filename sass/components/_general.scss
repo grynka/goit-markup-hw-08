@@ -16,11 +16,7 @@ h1 {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    width: 320px;
-    
-@media screen and (min-width: $mobile) {
     width: $mobile;
-}
 
 @media screen and (min-width: $tablet) {
     width: $tablet;

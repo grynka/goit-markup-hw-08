@@ -1,19 +1,11 @@
 .subscribe {
   color: $brand-color-white;
   text-transform: uppercase;
-  vertical-align: top;
   line-height: 1.17em;
   font-weight: 700;
   letter-spacing: 0.03em;
-
-  @media screen and (min-width: $mobile) {
     display: block;
     text-align: center;
-  }
-
-  @media screen and (min-width: $tablet) {
-    
-  }
 
   @media screen and (min-width: $descstop) {
     display: inline-block;
@@ -42,15 +34,16 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: $brand-color-white;
-
-  @media screen and (min-width: $mobile) {
     margin-bottom: 20px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     display: block;
-  }
+
+    @media screen and (min-width: $tablet) {
+        width: 450px;
+      }
 
   @media screen and (min-width: $descstop) {
     margin: 0;

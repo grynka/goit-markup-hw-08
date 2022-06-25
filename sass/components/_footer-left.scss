@@ -1,10 +1,8 @@
 .footer-left {
   display: block;
+  text-align: center;
+  margin-bottom: 60px;
 
-  @media screen and (min-width: $mobile) {
-    text-align: center;
-    margin-bottom: 60px;
-  }
 
   @media screen and (min-width: $tablet) {
     display: inline-block;
@@ -30,13 +28,11 @@
   line-height: 1.174;
   display: block;
   width: max-content;
-
-  @media screen and (min-width: $mobile) {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-  }
+
 
   @media screen and (min-width: $tablet) {
     
