@@ -10,15 +10,11 @@
     $fontPrimary: Roboto, sans-serif;
     $fontLogo: Raleway, sans-serif;
 
-    $mobile: 320px;
+    $mobile: 480px;
     $tablet: 768px;
     $descstop: 1200px;
 
-    %section { padding-top: 94px; padding-bottom: 94px; }
-    %img {display: block; max-width: 100%;}
-
-@mixin flexCenter($type: flex, $main-axis: center, $cross-axis: center) {
-    display: $type;
-    justify-content: $main-axis;
-    align-items: $cross-axis;
-}
+$breakpoints: (
+    'small': 767px,
+    'medium': 992px,
+    'large': 1200px) !default;
