@@ -8,9 +8,9 @@
 nav {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-      width: 100%;
-    justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .nav-logo {
@@ -101,15 +101,16 @@ nav {
   margin-bottom: 0;
   margin-top: 0;
   display: none;
-    
-      @media screen and (min-width: $tablet) {
-        display: flex;
-      }
-    
-      @media screen and (min-width: $descstop) {
-        display: flex;
-        flex-wrap: wrap;
-      }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    height: auto;
+  }
+
+  @media screen and (min-width: $descstop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .contacts__link {
@@ -133,12 +134,18 @@ nav {
 
 .contacts__item:not(:last-child) {
   margin-right: 50px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: $descstop) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__icon {
   margin-right: 10px;
 }
-
 
 .mobile-nav__items {
   top: 0;
@@ -148,23 +155,20 @@ nav {
   height: 100vh;
   list-style: none;
   padding: 48px 40px;
-  }
+}
 
 .mobile-nav__link {
-text-decoration: none;
-font-size: 40px;
-line-height: 1.15em;
-letter-spacing: 0.03em;
-font-weight: 500;
-color: $brand-color;
-
+  text-decoration: none;
+  font-size: 40px;
+  line-height: 1.15em;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  color: $brand-color;
 }
 
 .mobile-nav__item {
-margin-bottom: 32px;
+  margin-bottom: 32px;
 }
-
-
 
 .menu-toggle {
   min-height: 40px;
@@ -180,17 +184,17 @@ margin-bottom: 32px;
   border-radius: 50%;
   outline: none;
 
-      @media screen and (min-width: $mobile) {
-          display: flex;
-        }
-      
-        @media screen and (min-width: $tablet) {
-          display: none;
-        }
-      
-        @media screen and (min-width: $descstop) {
-          display: none;
-        }
+  @media screen and (min-width: $mobile) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  @media screen and (min-width: $descstop) {
+    display: none;
+  }
 }
 
 .mobile-nav .menu-toggle {

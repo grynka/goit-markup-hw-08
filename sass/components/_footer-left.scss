@@ -3,7 +3,6 @@
   text-align: center;
   margin-bottom: 60px;
 
-
   @media screen and (min-width: $tablet) {
     display: inline-block;
     margin-left: 76px;
@@ -29,14 +28,9 @@
   display: block;
   width: max-content;
   margin-bottom: 20px;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-
-
-  @media screen and (min-width: $tablet) {
-    
-  }
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: $descstop) {
     margin-right: 92px;
