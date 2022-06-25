@@ -80,3 +80,17 @@ margin-bottom: 0;
   line-height: 1.172;
   margin: 0;
 }
+
+.team__image {
+width: 450;
+height: auto;
+
+      @media screen and (min-width: $tablet) {
+width: 354;
+        }
+      
+        @media screen and (min-width: $descstop) {
+width: 270;
+        }
+
+}
