@@ -12,12 +12,11 @@
   margin-bottom: 0;
   margin-top: 0;
   display: block;
-  
-    @media screen and (min-width: $tablet) {
-      display: flex;
-      flex-wrap: wrap;
-    }
 
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .qualities__item {
@@ -29,9 +28,9 @@
   flex-basis: calc(100% / 2 - $margin-li);
   margin-left: $margin-li;
 
-    @media screen and (min-width: $descstop) {
-  flex-basis: calc(100% / 4 - $margin-li);
-      }
+  @media screen and (min-width: $descstop) {
+    flex-basis: calc(100% / 4 - $margin-li);
+  }
 }
 
 .qualities__box {
@@ -39,7 +38,7 @@
   border-radius: 4px;
   margin-bottom: 30px;
   height: 120px;
-@include flexCenter;
+  @include flexCenter;
 }
 
 .qualities__title {
@@ -49,15 +48,11 @@
   line-height: 1.172;
   font-size: 14px;
   margin: 0;
- text-align: center;
+  text-align: center;
 
-      @media screen and (min-width: $tablet) {
-        text-align: center;
-      }
-    
-      @media screen and (min-width: $descstop) {
-        text-align: left;
-      }
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
 }
 
 .qualities__text {

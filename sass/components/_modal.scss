@@ -13,6 +13,9 @@
     position: fixed;
     background-color: rgba(0, 0, 0, 20%);
     z-index: 1;
+    padding: 0 15px;
+
+
 }
 
 .is-hidden {
@@ -26,7 +29,8 @@
 }
 
 .modal {
-    width: 528px;
+    width: 100%;
+    max-width: 450px;
     background: #ffffff;
     margin: auto;
     padding: 40px;
@@ -34,6 +38,10 @@
     transform: scale(1);
     transition-duration: 250ms;
     color: $brand-color-link;
+
+        @media screen and (min-width: $descstop) {
+                max-width: 523px;
+            }
 }
 
 .modal__name {
@@ -169,11 +177,16 @@
 }
 
 .order-form__check-label {
-    width: 423px;
+    width: 370px;
     display: block;
     text-align: center;
     margin: 0 auto;
     line-height: 1.71em;
+    font-size: 12px;
+    @media screen and (min-width: $descstop) {
+            font-size: 14px;
+            width: 423px;
+        }
 }
 
 .order-form__checkbox-icon {
@@ -185,7 +198,10 @@
     position: absolute;
     display: flex;
     top: 4px;
-    left: 14px;
+
+        @media screen and (min-width: $descstop) {
+                left: 14px;
+            }
 }
 
 .order-form__checked-icon {
