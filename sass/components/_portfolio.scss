@@ -73,20 +73,12 @@
   margin-top: calc(-1 * $margin-li);
   list-style: none;
   padding: 0;
-
-  @media screen and (min-width: $mobile) {
-    display: block;
-  }
-
+  display: block;
   @media screen and (min-width: $tablet) {
     flex-wrap: wrap;
     display: flex;
   }
 
-  @media screen and (min-width: $descstop) {
-    flex-wrap: wrap;
-    display: flex;
-  }
 }
 
 .portfolio__item:first-of-type .portfolio__lable {
@@ -140,6 +132,20 @@ height: auto;
 .portfolio__media {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio__image {
+  width: 450px;
+  height: auto;
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: $descstop) {
+    width: 370px;
+  }
+
 }
 
 .portfolio__hiden {

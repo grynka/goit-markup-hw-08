@@ -25,6 +25,20 @@
         <a class="nav-logo" href="./index.html"
           ><span class="nav-logo__text">Web</span>Studio</a
         >
+        <button type="button" class='menu-toggle mobile-nav__open'>
+  <svg class="button-menu__icon" width="24" height="16" aria-label="переключатель мобильного меню">
+    <use class="button-menu__open" href="./images/icon.svg#mobile-menu"></use>
+  </svg>
+</button>
+<div class="mobile-nav" id="mobile-nav__items"><button type="button"  class="menu-toggle mobile-nav__close">
+    <svg class="button-menu__icon" width="24" height="16" aria-label="переключатель мобильного меню">
+    <use class="button-menu__close" href="./images/icon.svg#close-menu"></use>
+    </svg></button>
+   <ul class="mobile-nav__items">
+          <li class="mobile-nav__item"><a class="mobile-nav__link mobile-nav__link--active" href="./index.html">Студия</a></li>
+          <li class="mobile-nav__item"><a class="mobile-nav__link" href="./portfolio.html">Портфолио</a></li>
+          <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Контакты</a></li>
+        </ul></div>
         <ul class="site-nav">
           <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Студия</a></li>
           <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="./portfolio.html">Портфолио</a></li>
@@ -66,7 +80,7 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__box">
                 <div class="portfolio__media">
-                  <img src="./images/project1.jpg" alt="project1" />
+                  <img class="portfolio__image" src="./images/project1.jpg" alt="project1" />
                   <div class="portfolio__hiden">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -82,7 +96,7 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__box">
                 <div class="portfolio__media">
-                  <img src="./images/project2.jpg" alt="project2" />
+                  <img class="portfolio__image" src="./images/project2.jpg" alt="project2" />
                   <div class="portfolio__hiden">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -98,7 +112,7 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__box">
                 <div class="portfolio__media">
-                  <img src="./images/project3.jpg" alt="project3" />
+                  <img class="portfolio__image" src="./images/project3.jpg" alt="project3" />
                   <div class="portfolio__hiden">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -114,7 +128,7 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__box">
                 <div class="portfolio__media">
-                  <img src="./images/project4.jpg" alt="project4" />
+                  <img class="portfolio__image" src="./images/project4.jpg" alt="project4" />
                   <div class="portfolio__hiden">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -130,7 +144,7 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__box">
                 <div class="portfolio__media">
-                  <img src="./images/project5.jpg" alt="project5" />
+                  <img class="portfolio__image" src="./images/project5.jpg" alt="project5" />
                   <div class="portfolio__hiden">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -146,7 +160,7 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__box">
                 <div class="portfolio__media">
-                  <img src="./images/project6.jpg" alt="project6" />
+                  <img class="portfolio__image" src="./images/project6.jpg" alt="project6" />
                   <div class="portfolio__hiden">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -162,7 +176,7 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__box">
                 <div class="portfolio__media">
-                  <img src="./images/project7.jpg" alt="project7" />
+                  <img class="portfolio__image" src="./images/project7.jpg" alt="project7" />
                   <div class="portfolio__hiden">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -178,7 +192,7 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__box">
                 <div class="portfolio__media">
-                  <img src="./images/project8.jpg" alt="project8" />
+                  <img class="portfolio__image" src="./images/project8.jpg" alt="project8" />
                   <div class="portfolio__hiden">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -194,7 +208,7 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__box">
                 <div class="portfolio__media">
-                  <img src="./images/project9.jpg" alt="project9" />
+                  <img class="portfolio__image" src="./images/project9.jpg" alt="project9" />
                   <div class="portfolio__hiden">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -276,8 +290,7 @@
   </div>
   </button>
   </form>
-</div>
-        </div>
     </footer>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
