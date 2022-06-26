@@ -15,17 +15,12 @@
   margin-bottom: 50px;
   margin-right: -8px;
   flex-wrap: wrap;
-  @media screen and (min-width: $mobile) {
-    justify-content: left;
-  }
+  justify-content: left;
 
   @media screen and (min-width: $tablet) {
     justify-content: center;
   }
 
-  @media screen and (min-width: $descstop) {
-    justify-content: center;
-  }
 }
 
 .portfolio__button:not(:last-child) {
@@ -46,18 +41,12 @@
   transition-property: color, box-shadow, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media screen and (min-width: $mobile) {
-    margin-bottom: 15px;
-  }
+  margin-bottom: 15px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: $descstop) {
-    margin-bottom: 0;
-  }
 
   &:hover,
   &:focus {

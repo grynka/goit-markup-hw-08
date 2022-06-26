@@ -27,18 +27,18 @@
   margin-top: 0;
   display: block;
   margin-bottom: calc(-1 * $margin-li);
-    
-      @media screen and (min-width: $tablet) {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: calc(-1 * $margin-li);
-      }
-    
-      @media screen and (min-width: $descstop) {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 0;
-      }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: calc(-1 * $margin-li);
+  }
+
+  @media screen and (min-width: $descstop) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
 }
 
 .team__item {
@@ -48,21 +48,17 @@
   background-color: $brand-color-white;
   text-align: center;
   border-radius: 4px;
+  display: block;
+  margin-bottom: $margin-li;
 
-    @media screen and (min-width: $mobile) {
-        display: block;
-        margin-bottom: $margin-li;
-      }
-    
-      @media screen and (min-width: $tablet) {
-flex-basis: calc(100% / 2 - $margin-li);
-margin-bottom: $margin-li;
-      }
-    
-      @media screen and (min-width: $descstop) {
-flex-basis: calc(100% / 4 - $margin-li);
-margin-bottom: 0;
-      }
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc(100% / 2 - $margin-li);
+  }
+
+  @media screen and (min-width: $descstop) {
+    flex-basis: calc(100% / 4 - $margin-li);
+    margin-bottom: 0;
+  }
 }
 
 .team__info {
@@ -82,15 +78,16 @@ margin-bottom: 0;
 }
 
 .team__image {
-width: 450px;
-height: auto;
+  width: 450px;
+  height: 460px;
 
-      @media screen and (min-width: $tablet) {
-width: 354px;
-        }
-      
-        @media screen and (min-width: $descstop) {
-width: 270px;
-        }
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+    height: 374px;
+  }
 
+  @media screen and (min-width: $descstop) {
+    width: 270px;
+    height: 260px;
+  }
 }

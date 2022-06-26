@@ -17,11 +17,7 @@
       display: flex;
       flex-wrap: wrap;
     }
-  
-    @media screen and (min-width: $descstop) {
-      display: flex;
-      flex-wrap: wrap;
-    }
+
 }
 
 .qualities__item {
@@ -30,8 +26,12 @@
   color: $brand-color-link;
   line-height: 1.786;
   letter-spacing: 0.03em;
-  flex-basis: calc(100% / 4 - $margin-li);
+  flex-basis: calc(100% / 2 - $margin-li);
   margin-left: $margin-li;
+
+    @media screen and (min-width: $descstop) {
+  flex-basis: calc(100% / 4 - $margin-li);
+      }
 }
 
 .qualities__box {
