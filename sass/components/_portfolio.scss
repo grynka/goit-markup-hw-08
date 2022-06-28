@@ -20,7 +20,6 @@
   @media screen and (min-width: $tablet) {
     justify-content: center;
   }
-
 }
 
 .portfolio__button:not(:last-child) {
@@ -47,7 +46,6 @@
     margin-bottom: 0;
   }
 
-
   &:hover,
   &:focus {
     background-color: var(--brand-color-blue);
@@ -67,19 +65,7 @@
     flex-wrap: wrap;
     display: flex;
   }
-
 }
-
-.portfolio__item:first-of-type .portfolio__lable {
-    @media screen and (min-width: $tablet) {
-height: 147px;
-      }
-    
-      @media screen and (min-width: $descstop) {
-height: auto;
-      }
-}
-
 
 .portfolio__item {
   margin-left: $margin-li;
@@ -90,7 +76,7 @@ height: auto;
   @media screen and (min-width: $tablet) {
     flex-basis: calc(100% / 2 - $margin-li);
     outline: 1px;
-    }
+  }
 
   @media screen and (min-width: $descstop) {
     flex-basis: calc(100% / 3 - $margin-li);
@@ -109,7 +95,9 @@ height: auto;
 .portfolio__box {
   text-decoration: none;
   color: $brand-color;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition-property: box-shadow, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -134,7 +122,6 @@ height: auto;
   @media screen and (min-width: $descstop) {
     width: 370px;
   }
-
 }
 
 .portfolio__hiden {
@@ -169,6 +156,7 @@ height: auto;
   border-right: 1px solid #eeeeee;
   padding: 20px 24px;
   background-color: $brand-color-white;
+  flex-grow: 1;
 }
 
 .portfolio__name {

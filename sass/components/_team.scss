@@ -79,15 +79,13 @@
 
 .team__image {
   width: 450px;
-  height: 460px;
+  height: auto;
 
   @media screen and (min-width: $tablet) {
     width: 354px;
-    height: 374px;
   }
 
   @media screen and (min-width: $descstop) {
     width: 270px;
-    height: 260px;
   }
 }
