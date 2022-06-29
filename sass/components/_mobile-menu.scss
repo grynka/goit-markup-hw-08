@@ -7,6 +7,8 @@
   padding: 0;
 }
 
+
+
 .mobile-nav__link {
   text-decoration: none;
   font-size: 40px;
@@ -14,13 +16,16 @@
   letter-spacing: 0.03em;
   font-weight: 500;
   color: $brand-color;
-&:hover,
-&:focus {
-  color: $brand-color-blue;
+  &:hover,
+  &:focus {
+    color: $brand-color-blue;
+  }
 }
 
-}
-
+ .mobile-nav__link--active {
+   color: $brand-color-blue;
+ }
+ 
 .mobile-nav__item {
   margin-bottom: 32px;
 }
@@ -47,7 +52,6 @@
   &:focus {
     fill: $brand-color-blue;
   }
-
 }
 
 .mobile-nav .menu-toggle {
@@ -57,7 +61,7 @@
   color: #fff;
 }
 
-.mobile-nav.is-open {
+.mobile-nav.is-open  {
   transform: translateX(0);
 }
 
@@ -91,6 +95,7 @@
   line-height: 1.22em;
   letter-spacing: 0.02em;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .mobile-nav__social:last-child {
@@ -140,4 +145,8 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.no-scroll {
+  overflow: hidden;
 }

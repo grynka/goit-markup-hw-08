@@ -178,14 +178,15 @@
 
 .order-form__check-label {
     width: 370px;
-    display: block;
     text-align: center;
     margin: 0 auto;
     line-height: 1.71em;
     font-size: 12px;
+    margin-left: 20px;
     @media screen and (min-width: $descstop) {
             font-size: 14px;
             width: 423px;
+            margin-left: 30px;
         }
 }
 

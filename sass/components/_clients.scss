@@ -1,11 +1,15 @@
 .clients__title {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 50px;
   margin-top: 0;
   line-height: 1.172;
   letter-spacing: 0.03em;
   text-align: center;
+
+  @media screen and (min-width: $descstop) {
+      font-size: 36px;
+    }
 }
 
 .clients__items {
@@ -17,7 +21,7 @@
   display: flex;
   margin-left: calc(-1 * $margin-li);
   margin-top: 0;
-
+  margin-bottom: calc(-1 * $margin-li);
   @media screen and (min-width: $descstop) {
     margin-bottom: 0;
   }
@@ -56,7 +60,7 @@
   &:hover,
   &:focus {
     fill: #2196f3;
-    outline-color: #2196f3;
+    border-color: #2196f3;
   }
 }
 

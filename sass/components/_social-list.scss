@@ -18,7 +18,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @include flexCenter;
     
-    &:hover
+    &:hover,
     &:focus {
             fill: $brand-color-white;
             background-color: $brand-color-blue;

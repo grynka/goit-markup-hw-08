@@ -34,7 +34,11 @@ h1 {
 }
 
 .section {
-    @extend %section;
+    @extend %section-mob;
+    @media screen and (min-width: $descstop) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 }
 
 img {
