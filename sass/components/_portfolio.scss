@@ -67,6 +67,12 @@
   }
 }
 
+.portfolio__link--active {
+    background-color: $brand-color-blue;
+      color: $brand-color-white;
+}
+
+
 .portfolio__item {
   margin-left: $margin-li;
   margin-top: $margin-li;

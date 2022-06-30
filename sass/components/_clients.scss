@@ -1,7 +1,7 @@
 .clients__title {
   font-size: 28px;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 0;
   line-height: 1.172;
   letter-spacing: 0.03em;
@@ -9,6 +9,7 @@
 
   @media screen and (min-width: $descstop) {
       font-size: 36px;
+      margin-bottom: 50px;
     }
 }
 
@@ -48,7 +49,7 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-  transition-property: fill, outline-color;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   height: 92px;
