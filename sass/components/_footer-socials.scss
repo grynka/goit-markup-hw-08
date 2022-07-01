@@ -39,7 +39,7 @@
     padding: 0;
 }
 
-.footer-socials__item {
+.footer-socials__item:not(:last-child)  {
     margin-right: 10px;
 }
 
